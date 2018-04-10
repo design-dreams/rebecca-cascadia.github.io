@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway');
+
+body {
+    font-size: 18px;
+    color: #b2f1eb;
+    background-color: black;
+}
+h1,h2 {font-family: 'Raleway', sans-serif;}
+h3 {font-family: 'Sacramento', cursive;}
+
+/* background image */
+img {
+    width: 100%;
+    opacity: 0.9;
+}
+/* placement of content */
+.intro {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+button {
+    margin-top: 30px;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #c8cdcb;
+}
+/* 1st breakpoint for responsive design */
+@media screen and (min-width: 430px) {
+    img {content: url(../images/left2bgdesk.jpg);}
+    body {font-size: 1.3em;}
+    .intro {top: 50px; left: 50px;}
+}
+/* 2nd breakpoint for responsive design */
+@media screen and (min-width: 900px) {
+    img {content: url(../images/leftbgdesk.jpg);}
+    body {font-size: 1.4em;}
+    .intro {top: 30px;}
+}

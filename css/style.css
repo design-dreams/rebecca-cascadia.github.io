@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway');
+
+.page {
+    margin: auto;
+}
+h1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #808080;
+    font-family: 'Raleway',sans-serif;
+    font-size: 34px;
+}
+h2 {
+    color: hsla(187, 100%, 42%, 0.56);
+    font-size: 40px;
+    font-family: 'Sacramento',cursive;
+    margin-left: 100px;
+    position: absolute;
+    top: 15px;
+}
+/* Navigation Bar */
+.nav {
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #808080;
+    font-size: 12px;
+    color: #8dd8e2;
+    font-family: 'Ariel',sans-serif;
+    width: 100%;
+}
+li {
+    margin: 15px 10px;
+}
+/* image gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+img {
+    border: 2px solid black;
+    margin: 10px;
+}
+/* 1st breakpoint for responsive design */
+@media screen and (min-width: 688px) {
+    img {
+        height: 300px;
+        width: 300px;
+    }  
+}
+/* 2nd breakpoint for responsive design */
+@media screen and (min-width: 900px) {
+    .gallery {
+        width: 900px;
+        margin: auto;
+    }  
+    img {
+        margin: 50px;
+    }
+}
