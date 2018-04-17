@@ -4,44 +4,86 @@
 }
 
 /* google fonts */
-@import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway:400,600');
+
+/* fonts from icomoon.io */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?autvwj');
+  src:  url('../fonts/icomoon.eot?autvwj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?autvwj') format('truetype'),
+    url('../fonts/icomoon.woff?autvwj') format('woff'),
+    url('../fonts/icomoon.svg?autvwj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-speakoff:before {
+    content: "\ea29";
+    font-family: 'icomoon';
+    speak: none;
+    font-size: 20px;
+}
 
 body {
-    font-size: 18px;
-    color: #b2f1eb;
+    font-size: 14px;
+    color: #00bdd6;
     background-color: black;
+    background-image: url('../images/wood.jpg');
+    
+    background-size: 100% auto;
 }
 h1,h2 {font-family: 'Raleway', sans-serif;}
-h3 {font-family: 'Sacramento', cursive;}
+h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 14px;
+}
+h1 {font-size: 24px;}
+h2 {font-size: 20px;}
 
-/* background image */
-img {
+/* placement of header content */
+.stripe {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #352e2b;
     width: 100%;
-    opacity: 0.9;
+    margin-top: 100px;
 }
-/* placement of content */
 .intro {
-    position: absolute;
-    top: 70px;
-    left: 20px;
+    margin: 15px;
 }
-button {
-    margin-top: 30px;
-    padding: 5px 10px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    font-size: 12px;
-    background-color: #c8cdcb;
+
+/* link to porfolio */
+#portfoliolink:hover {
+    content: url(../images/arrow2.svg);
 }
+@keyframes popup {
+  0% {
+    transform: translateX(-150px);
+  }
+  30% {
+    transform: translateX(-80px);
+  }
+  60% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+#portfoliolink {
+  transform: translateX(-100px);
+  animation: popup 6s 2s ease infinite;
+}
+
 /* 1st breakpoint for responsive design */
 @media screen and (min-width: 430px) {
-    img {content: url(../images/left2bgdesk.jpg);}
-    body {font-size: 1.3em;}
+    /*img {content: url(../images/left2bgdesk.jpg);}*/
     .intro {top: 50px; left: 50px;}
 }
 /* 2nd breakpoint for responsive design */
 @media screen and (min-width: 900px) {
-    img {content: url(../images/leftbgdesk.jpg);}
-    body {font-size: 1.4em;}
+    /*img {content: url(../images/leftbgdesk.jpg);}*/
     .intro {top: 30px;}
+    .stripe {margin-top: 200px;}
+        
 }

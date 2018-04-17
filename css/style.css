@@ -6,9 +6,52 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway');
 
-.page {
-    margin: auto;
+/* fonts from icomoon.io */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?autvwj');
+  src:  url('../fonts/icomoon.eot?autvwj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?autvwj') format('truetype'),
+    url('../fonts/icomoon.woff?autvwj') format('woff'),
+    url('../fonts/icomoon.svg?autvwj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+.icon-phone:before {
+    content: "\e942";
+    font-family: 'icomoon';
+    speak: none;
+    font-size: 20px;
+}
+.icon-word:after {
+    content: "\eae1";
+    font-family: 'icomoon';
+    speak: none;
+    font-size: 20px;
+}
+.icon-mail:before {
+    content: "\e945";
+    font-family: 'icomoon';
+    speak: none;
+    font-size: 20px;
+}
+.icon-speak:before {
+    content: "\ea27";
+    font-family: 'icomoon';
+    speak: none;
+    font-size: 20px;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 320px;
+    background-color: #f5f0f0;
+}
+body {
+    background-color: #f5f0f0;
+}
+
 h1 {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -22,18 +65,32 @@ h2 {
     font-family: 'Sacramento',cursive;
     margin-left: 100px;
     position: absolute;
-    top: 15px;
+    top: 14px;
 }
+h3, p {
+    margin: 10px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+}
+
 /* Navigation Bar */
 .nav {
     display: inline-flex;
     justify-content: center;
     list-style: none;
     background-color: #808080;
-    font-size: 12px;
-    color: #8dd8e2;
+    font-size: 14px;
+    color: #00bdd6;
+    text-shadow: 2px 2px 3px black;
     font-family: 'Ariel',sans-serif;
     width: 100%;
+}
+a:link, a:visited {
+    color: #00bdd6;
+    text-decoration: none;
+}
+a:hover {
+    color: #e66c0e;
 }
 li {
     margin: 15px 10px;
@@ -54,7 +111,7 @@ img {
     img {
         height: 300px;
         width: 300px;
-    }  
+    }      
 }
 /* 2nd breakpoint for responsive design */
 @media screen and (min-width: 900px) {
@@ -64,5 +121,17 @@ img {
     }  
     img {
         margin: 50px;
+    }
+    body {
+    background-image: url("../images/wood.jpg");
+    /* image from textures.com */
+    background-repeat: repeat;
+    }
+    .page {
+        margin: 30px auto;
+        border: 3px solid #808080;
+    }
+    h2 {
+        top: 47px;
     }
 }
