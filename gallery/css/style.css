@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arima Madurai', sans-serif;
+}
+.page {
+    background-color: #32444E;
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 320px; /* change */
+}
+#title {
+    background-color: #F3F3F7;
+    color: #46653C;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slideshow {
+    display: none;
+}
+#byline, #purpose {
+    text-align: center;
+    color: #F3F3F7;
+    font-size: 12px;
+}
+#byline {
+    margin: 35px 0 5px;
+}
+/* images */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.descrip {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #2A2428;
+    border-radius: 10px;
+    margin: 20px;
+    /*background-color: #B9C4D4;*/
+}
+.descrip:hover {
+    border-color: #46653C;
+}
+.descrip p {
+    display: none;
+    background-color: #B9C4D4;
+    background-color: rgba(185, 196, 212, .7);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+/* sticky footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #587275;
+    position: -webkit-sticky; /* safari */
+    position: sticky;
+    bottom: 0;
+}
+/* responsive design */
+@media screen and (min-width: 532px) {
+    #slideshow {
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 5px;
+    }
+    #title {
+        font-size: 28px;
+    }
+    #byline, #purpose {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 778px) {
+    body {
+        background-image: url('../images/rocks.jpg');
+        background-repeat: repeat;
+}
+
+
