@@ -23,9 +23,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-#slideshow {
-    display: none;
-}
 #byline, #purpose {
     text-align: center;
     color: #F3F3F7;
@@ -74,12 +71,6 @@ footer {
 }
 /* responsive design */
 @media screen and (min-width: 532px) {
-    #slideshow {
-        display: block;
-        position: absolute;
-        top: 150px;
-        right: 5px;
-    }
     #title {
         font-size: 28px;
     }

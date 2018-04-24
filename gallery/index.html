@@ -6,12 +6,10 @@
     <meta charset="utf-8">
     <meta name="author" content="Rebecca Miller">
     <meta name="description" content="Pacific NW Photos by Rebecca">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- can change scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700" rel="stylesheet">
-    <!-- largest pictures are 1920 x 1080 (1.78:1 ratio) -->
-    <style></style>
-    <script></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
 </head>
 
 <body>
@@ -23,12 +21,11 @@
         </div>
         <p id="byline">Follow me on a path through the woods to see the Pacific Northwest...</p>
         <p id="purpose">Purpose</p>
-        <img id="slideshow" src="images/slideshow.svg" width="90">
     </header>
     <section class="gallery">
-        <div class="descrip" style="background-image: url('images/IMG_3956.jpg')"><p>A fall day in Carnation on the Snoqualmie River. This picture was taken at the Tolt River Park in 2017.</p></div>
+        <div class="descrip" style="background-image: url('images/IMG_3956.jpg')"><p>A fall day in Carnation on the Snoqualmie River. This picture was taken at the Tolt River Park in 2017.<br><br><a href="images/IMG_3956-2.jpg">see larger picture</a></p></div>
         
-        <div class="descrip" style="background-image: url('images/IMG_3956.jpg')"><p>text</p></div>
+        <div class="descrip" style="background-image: url('images/IMG_3830.jpg')"><p>A flower at the Bellevue Botanical Garden<br><a href="images/IMG_3830-2.jpg">see larger picture</a></p></div>
         
         <div class="descrip" style="background-image: url('images/IMG_3956.jpg')"><p>text</p></div>
         
@@ -44,8 +41,10 @@
         <p>Pictures and design by <a href="../index.html">Rebecca</a>. Pictures for private use only.</p>
     </footer>
 </div>
-    
+<!-- jQuery -->  
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<!-- lightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js" async></script>
 <script>
 /* slowly shows byline */
 $(function() {
@@ -62,10 +61,11 @@ $(function() {
             $(this).find('p').toggle();
         });
 });
-/* use colorbox to show photos only in desktop 
-if($(window).width() >= 1024){
-  // do your stuff
-} */ 
+$(function() {
+    "use strict";
+    baguetteBox.run('.gallery');
+    
+});
 </script>
 
 </body>
