@@ -31,7 +31,8 @@ a:hover {color: #46653C}
 #byline {
     text-align: center;
     color: #F3F3F7;
-    font-size: 1em;
+    font-size: 14px;
+    font-weight: 400;
     margin: 35px 0 5px;
 }
 /* flexbox for gallery */
