@@ -4,6 +4,7 @@
 }
 body {
     font-family: 'Arima Madurai', sans-serif;
+    font-size: 14px;
 }
 .page {
     background-color: #32444E;
@@ -11,11 +12,15 @@ body {
     max-width: 960px;
     min-width: 320px; /* change */
 }
+
+a:link {color: #32444E}
+a:visited {color: #32444E}
+a:hover {color: #46653C}
 #title {
     background-color: #F3F3F7;
     color: #46653C;
     padding: 10px 0;
-    font-size: 12px;
+    font-size: 1em;
     font-weight: bold;
     position: relative;
     top: 30px;
@@ -23,32 +28,31 @@ body {
     justify-content: center;
     align-items: center;
 }
-#byline, #purpose {
+#byline {
     text-align: center;
     color: #F3F3F7;
-    font-size: 12px;
-}
-#byline {
+    font-size: 1em;
     margin: 35px 0 5px;
 }
-/* images */
+/* flexbox for gallery */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
 }
+/* photos and boxes */
 .descrip {
     width: 200px;
     height: 200px;
     border: 3px solid #2A2428;
     border-radius: 10px;
     margin: 20px;
-    /*background-color: #B9C4D4;*/
 }
 .descrip:hover {
     border-color: #46653C;
 }
+/* description inside photo boxes */
 .descrip p {
     display: none;
     background-color: #B9C4D4;
@@ -59,7 +63,6 @@ body {
     padding: 3px;
     box-sizing: border-box;
 }
-
 /* sticky footer */
 footer {
     text-align: center;
@@ -68,17 +71,23 @@ footer {
     position: -webkit-sticky; /* safari */
     position: sticky;
     bottom: 0;
+    font-size: 12px;
 }
 /* responsive design */
-@media screen and (min-width: 532px) {
+@media screen and (min-width: 400px) {
     #title {
-        font-size: 28px;
-    }
-    #byline, #purpose {
-        font-size: 14px;
+        font-size: 1.4em;
     }
 }
-@media screen and (min-width: 778px) {
+@media screen and (min-width: 532px) {
+    #title {
+        font-size: 2em;
+    }
+    #byline {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 960px) {
     body {
         background-image: url('../images/rocks.jpg');
         background-repeat: repeat;
