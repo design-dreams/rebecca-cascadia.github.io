@@ -2,21 +2,39 @@
 <html lang="en">
 
 <head>
-    <title>Rebecca Miller-Web Designer</title>
+    <title>Rebecca Palumbo-Web Designer</title>
     <meta charset="utf-8">
-    <meta name="author" content="Rebecca Miller">
+    <meta name="author" content="Rebecca Palumbo">
     <meta name="description" content="Find Rebecca's resume, work and contact information.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|EB+Garamond:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam" rel="stylesheet">
     <link href="css/intro.css" rel="stylesheet">
 </head>
 
 <body>
-    <section class="intro">
-        <h1>Rebecca Miller</h1>
+    <header class="intro">
+        <h1>Rebecca Palumbo</h1>
         <h2>Web Designer</h2>
+    </header>
+    <section>
+        <div id="animate">
+            <p id="text1">HTML5</p>
+            <p id="text2">CSS3</p>
+            <p id="text3">jQuery</p>
+            <p id="text4">Photoshop</p>
+            <p id="text5">Illustrator</p>
+            <p id="text6">Responsive Design</p>
+        </div>
         <div id="pbutton"><a href="portfolio.html"><img src="images/arrow.svg" alt="portfolio button"></a></div>
     </section>
+    
+    <!--CDN link for  TweenMax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script>
+        (function() {
+            TweenMax.to("#text1", 2, { top:500 });
+        });
+    </script>
 </body>
 
 </html>
