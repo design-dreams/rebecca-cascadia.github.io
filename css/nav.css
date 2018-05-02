@@ -1,0 +1,19 @@
+.nav {
+  background-color: #AF998B;
+}
+.nav li {
+  color: #4A877F;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav li a {
+  text-decoration: none;
+}
+.nav li a:link, .nav li a:visited {
+  color: #4A877F;
+}
+.nav li a:hover {
+  color: #A9DED2;
+}
+
+/*# sourceMappingURL=nav.css.map */

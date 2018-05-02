@@ -1,0 +1,19 @@
+@import "_variables.scss";
+
+.nav {
+    background-color: $darkbeige;
+    li {
+        color: $green;
+        font-size: $navfont;
+        font-weight: 500;
+        a {
+            text-decoration: none;
+        }
+        a:link, a:visited {
+            color: $green;
+        }
+        a:hover {
+            color: $lightgreen;
+        }
+    }
+}
