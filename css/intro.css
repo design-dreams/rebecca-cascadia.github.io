@@ -9,8 +9,16 @@ body {
     background-image: url(../images/stones.jpg);
     background-repeat: no-repeat;
 }
-h1,h2 {font-family: 'Courgette', cursive;}
-h3 {font-family: 'Kalam', serif;}
+h1,h2 {
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+}
+#animate {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    margin-top: 200px;
+}
 
 /* placement of content */
 .intro {
@@ -27,14 +35,14 @@ h3 {font-family: 'Kalam', serif;}
 }
 /* 1st breakpoint for responsive design */
 @media screen and (min-width: 430px) {
-    body {
-        font-size: 1.3em;
+    h1, h2 {
+        font-size: 34px;
     }
 }
 /* 2nd breakpoint for responsive design */
 @media screen and (min-width: 700px) {
-    body {
-        font-size: 1.4em;
+    h1, h2 {
+        font-size: 40px;
     }
     #pbutton {
         width: 170px;
@@ -45,6 +53,8 @@ h3 {font-family: 'Kalam', serif;}
 @media screen and (min-width: 1900px) {
     body {
         background-size: 100%;
-        font-size: 1.5em;
+    }
+    h1, h2 {
+        font-size: 48px;
     }
 }
