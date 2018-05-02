@@ -19,21 +19,21 @@
     <section>
         <div id="animate">
             <p id="text1">HTML5</p>
-            <p id="text2">CSS3</p>
+            <!--<p id="text2">CSS3</p>
             <p id="text3">jQuery</p>
             <p id="text4">Photoshop</p>
             <p id="text5">Illustrator</p>
-            <p id="text6">Responsive Design</p>
+            <p id="text6">Responsive Design</p>-->
         </div>
         <div id="pbutton"><a href="portfolio.html"><img src="images/arrow.svg" alt="portfolio button"></a></div>
     </section>
     
-    <!--CDN link for  TweenMax-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <!--CDN link for TweenMax-->
+    <script src="js/TweenMax.min.js"></script>
     <script>
         (function() {
-            TweenMax.to("#text1", 2, { top:500 });
-        });
+            TweenMax.to('#text1', 10, { opacity: 0 });
+        }());
     </script>
 </body>
 
