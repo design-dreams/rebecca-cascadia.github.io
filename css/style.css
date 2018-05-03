@@ -37,6 +37,7 @@ h2 {
 }
 li {
     margin: 15px 10px;
+    text-shadow: 1px 1px;
 }
 /* image gallery */
 .gallery {

@@ -6,8 +6,9 @@
 body {
     font-size: 18px;
     color: #245355;
-    background-image: url(../images/stones.jpg);
+    background-image: url(../images/rockstack1.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 h1,h2 {
     font-family: 'Courgette', cursive;
