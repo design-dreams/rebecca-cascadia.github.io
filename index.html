@@ -18,12 +18,18 @@
     </header>
     <section>
         <div id="animate">
-            <p id="text1">HTML5</p>
-            <!--<p id="text2">CSS3</p>
-            <p id="text3">jQuery</p>
-            <p id="text4">Photoshop</p>
-            <p id="text5">Illustrator</p>
-            <p id="text6">Responsive Design</p>-->
+            <p id="text1">
+                finding the 
+                <span class="l1">p</span>
+                <span class="l2">i</span>
+                <span class="l2">e</span>
+                <span class="l2">c</span>
+                <span class="l2">e</span>
+                <span class="l2">s</span>
+            </p>
+            <p class="text2">creating harmony</p>
+            <p class="text3">keeping it simple</p>
+            <p class="text4">making something beautiful</p>
         </div>
         <div id="pbutton"><a href="portfolio.html"><img src="images/arrow.svg" alt="portfolio button"></a></div>
     </section>
@@ -32,7 +38,11 @@
     <script src="js/TweenMax.min.js"></script>
     <script>
         (function() {
-            TweenMax.to('#text1', 10, { opacity: 0 });
+            TweenMax.staggerTo('.l2', 2, { marginLeft: -15 }, 0.3)
+            TweenMax.to('.text2', 6, {opacity: 1})
+            TweenMax.to('.text3', 8, {opacity: 1})
+            TweenMax.to('.text4', 10, {opacity: 1});
+            
         }());
     </script>
 </body>
