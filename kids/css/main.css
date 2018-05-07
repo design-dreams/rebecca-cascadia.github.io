@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Gaegu', cursive;
+    background-color: #98DCE6;
+}
+#sun {
+    background-image: url(../images/sun2.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    
+}
+h1 {
+    font-size: 40px;
+    color: #E86062;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px #9c7778;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#color {
+    background-image: url(../images/paintred.png);
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+#color:hover {
+    background-image: url(../images/paintblue.png);
+}
+#draw {
+    background-image: url(../images/drawred.png);
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 60px 10px;
+    text-align: center;
+    font-size: 30px;
+}
+#draw:hover {
+    background-image: url(../images/drawblue.png);
+}
+
+
+#grass {
+    background-image: url(../images/grass2.png);
+    background-repeat: repeat-x;
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 500px) {
+    #sun {
+        background-image: url(../images/sun1.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+    #clouds {
+        background-image: url(../images/cloud1.png), url(../images/cloud2.png);
+        background-position: top center, top right;
+        background-repeat: no-repeat, no-repeat;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: -1;
+    }
+    h1 {
+        font-size: 60px;
+        margin-top: -50px;
+        
+    }
+    #spaceship {
+        background-image: url(../images/spaceship.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 80px;
+        right: 30px;
+        width: 200px;
+        height: 100px;
+        z-index: 10;
+    }
+}
+@media screen and (min-width: 900px) {
+    #color {
+        margin: 40px;
+    }
+    #draw {
+        margin: 40px;
+    }
+    
+}
