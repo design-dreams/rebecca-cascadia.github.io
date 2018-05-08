@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Art Space</title>
+    <title>Art Space - Color</title>
     <meta charset="utf-8">
     <meta name="author" content="Rebecca Palumbo">
     <meta name="description" content="Art Space - Color and Draw">
@@ -15,15 +15,11 @@
 <body>
 <div class="page">
     <header>
-        <div id="sun" class="animated tada"></div>
-        <div id="clouds"></div>
-        <div id="spaceship"></div>
-        <h1>Art Space</h1>
+        <h1><a href="index.html" class="animated tada">Art Space</a></h1>
     </header>
-    <nav>
-        <a href="color.html"><div id="color" class="animated infinite swing">color</div></a>
-        <a href="#"><div id="draw" class="animated infinite swing">draw</div></a>
-    </nav>
+    <section>
+        <img src="images/icecream.jpg" alt="picture to color"/>
+    </section>
     <footer>
         <div id="grass"></div>
         <div id="frog"></div>
@@ -38,40 +34,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TimelineMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
 
-<!-- Spaceship, Clouds and Frog Animations -->
+<!-- Frog jumping -->
 <script>
-    var $ship = $('#spaceship');
-    var $clouds = $('#clouds');
     var $frog = $('#frog');
     var $grass = $('#grass');
-     
-    (function () {
-        var tl2 = new TimelineMax({repeat:-1});
-        tl2.to($clouds, 50, {right: 1500});
-    }());
-    
-    $ship.on('click', function (e) {
-        var tl = new TimelineMax();
-        tl
-            .to($ship, 2, {rotation:20, top: 160, right: 120})
-            .to($ship, 1, {rotation:-20, top:200, right:150})
-            .to($ship, 1, {rotation:0, top:250, right:160})
-            .to($ship, 2, {top:300, right:140})
-            .to($ship, 1, {top:350, right:-300})
-            .to($ship, 10, {top:80, right:30});
-    });
-    
     $grass.on('click', function(e){
         var tl3 = new TimelineLite();
         tl3.to($($frog), 0.3, {bottom: 100})
         .to($($frog), 0.3, {bottom: 0});
     });
     
-    
-    
-    
 </script>
-
 </body>
 
 </html>
