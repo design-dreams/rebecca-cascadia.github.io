@@ -52,8 +52,12 @@ li {
     width: 300px;
     height: 100px;
     background-color: #3fa4a9;
+    font-size: 24px;
+}
+.gallery div p {
+    margin-top: 20px;
     text-align: center;
-    font-size: 30px;
+    
 }
 
 /* 1st breakpoint for responsive design */
