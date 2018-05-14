@@ -16,11 +16,13 @@ body {
 }
 h1 {
     font-size: 30px;
-    margin: 10px 0 0 10px;
+    margin-top: 10px;
+    text-align: center;
+    
 }
 h2 {
     font-size: 12px;
-    margin-left: 30px; 
+    text-align: center; 
 }
 .enter {
     position: fixed;
@@ -50,10 +52,11 @@ h2 {
 }
 .list {
     position: relative;
+    margin-top: 7%;
 }
 .list ul {
     position: absolute;
-    top: 130px;
+    top: 50px;
     left: 47%;
     font-size: 2em;
     list-style: none;
