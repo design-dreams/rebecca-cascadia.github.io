@@ -9,14 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|EB+Garamond:600" rel="stylesheet">
     <link href="css/intro.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
-    <section class="intro">
+    <header>
         <h1>Rebecca Palumbo</h1>
         <h2>Web Designer</h2>
-        <div id="pbutton"><a href="portfolio.html"><img src="images/arrow.svg" alt="portfolio button"></a></div>
+    </header>
+    <section class="intro">
+        <div class="list">
+            <ul>
+                <li>Simple</li>
+                <li>Balanced</li>
+                <li>Beautiful</li>
+                <li>Web Design</li>
+            </ul>
+        </div>
+        <div class="enter"><a href="portfolio.html">See My Portfolio</a><div class="duh"></div></div>
     </section>
+    
+<!-- jQuery -->  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script>
+    (function() {
+       $('li').children(1).show(); 
+    });
+</script>
+    
 </body>
 
 </html>
