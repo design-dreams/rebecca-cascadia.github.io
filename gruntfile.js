@@ -8,9 +8,10 @@ module.exports = function(grunt) {
             dist: {                     
                 options: {                      
                     style: 'expanded'
+                    //require: 'susy'
                 },
                 files: {                       
-                'css/nav.css': 'assets/scss/nav.scss'   // 'destination': 'source'
+                'css/portfolio.css': 'assets/scss/portfolio.scss'   // 'destination': 'source'
                 }
             }
         },
@@ -23,7 +24,7 @@ module.exports = function(grunt) {
         },
         watch: {      
             configFiles: {
-                files: [ 'assets/scss/nav.scss' ],
+                files: [ 'assets/scss/portfolio.scss' ],
                 tasks: ['sass'],   //runs sass task from above
                 options: {
                   event: ['all'],

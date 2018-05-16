@@ -15,5 +15,9 @@
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.1.0",
     "load-grunt-tasks": "^4.0.0"
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "susy": "^3.0.5"
   }
 }

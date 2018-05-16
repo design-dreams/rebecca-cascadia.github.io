@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento|Raleway");
+@media (min-width: 688px) {
+  .gallery div {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 900px) {
+  .gallery {
+    width: 900px;
+    margin: auto;
+  }
+}
+@media (min-width: 900px) {
+  .gallery div {
+    margin: 50px;
+  }
+}
+
+/*# sourceMappingURL=css/portfolio.css.map */

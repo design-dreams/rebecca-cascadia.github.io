@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-/* google fonts */
-@import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway');
-
 .page {
     margin: auto;
 }
@@ -60,14 +57,14 @@ li {
     
 }
 
-/* 1st breakpoint for responsive design */
+/* 1st breakpoint for responsive design 
 @media screen and (min-width: 688px) {
     .gallery div {
         height: 300px;
         width: 300px;
     }  
 }
-/* 2nd breakpoint for responsive design */
+/* 2nd breakpoint for responsive design 
 @media screen and (min-width: 900px) {
     .gallery {
         width: 900px;
@@ -76,4 +73,4 @@ li {
     .gallery div {
         margin: 50px;
     }
-}
+} */

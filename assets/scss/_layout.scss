@@ -1,0 +1,18 @@
+.gallery div {
+    @include breakpoint($medium) {
+        height: 300px;
+        width: 300px;
+    }  
+}
+.gallery {
+	@include breakpoint($large) {
+		width: 900px;
+        margin: auto;
+	}
+    div {
+        @include breakpoint($large) {
+            margin: 50px;
+        }
+    }
+}
+
