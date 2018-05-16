@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Going Global U</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebecca Palumbo, Kevin Durgan">
+    <meta name="description" content="Connecting university teachers for classroom COIL projects around the world"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Petit+Formal+Script" rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+    <header>
+        <h1>Going Global U</h1>
+        <h2>Connecting university teachers to create classroom collaborations across countries</h2>
+        <button class="signup">Sign Up</button>
+        <button class="signin">Sign In</button>
+        <button class="signout">Sign Out</button>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li><a href="members.html">Find Members</a></li>
+            <li><a href="projects.html">Find Projects</a></li>
+            <li><a href="account.html">My Account</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+    <section>
+        <img id="picture" src="images/greatdebate2.jpg" alt="picture of students on skype with students in classroom">
+        <div id="text">
+            <p>Going Global U is a place for university teachers to easily find each other so that they can create COIL (Collaborative On-line International Learning) projects together for their students. Virtual communication is used to allow students to learn together across countries and cultures. <a href="https://www.tukeinternationalconsulting.com">Resources</a> are available for COIL.</p>
+            <p>Please take the time to <a href="#">sign up</a>  to see the rest of the website and <a href="#">create a profile</a> to see member contact information. Members are searchable, but contact information isn’t available until you create a profile. The more profiles, the greater the chance of finding a good match. This service is free. If you have a project in mind, you can also <a href="#">create a project</a> profile that others can search.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="flinks"><a href="https://www.tukeinternationalconsulting.com"><p>Going Global Sister Site</p></a>
+            <a href="https://www.uwb.edu/globalinitiatives/academic/coil-initiative"><p>UW COIL Initiative</p></a>
+        </div>
+        
+        <!-- Twitter Button -->
+        <div class="twitter"><a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?text=Going Global U can help you find a partner to collaborate with on your next COIL project - http://www.goingglobalu.org"
+        data-size="large">Tweet</a>
+        </div>
+        
+        <!-- Facebook Button -->
+        <div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.goingglobalu.org">Share</a>
+        </div>
+    </footer>
+</div>
+
+<!-- jQuery CDN -->
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    
+<!-- Twitter Share Button -->
+<script>
+      window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+
+          t._e = [];
+          t.ready = function(f) {
+          t._e.push(f);
+          };
+      return t;
+      } (document, "script", "twitter-wjs"));
+</script>
+
+<script>
+    $('.signout').hide();
+    /* use jQuery to control buttons here */
+</script>
+
+</body>
+
+</html>
