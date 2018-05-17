@@ -15,7 +15,6 @@ body {
 /* content */
 section {
     position: relative;
-    width: 100%;
     padding: 20px;
     background-color: #ecdfc6;
 }
@@ -26,8 +25,6 @@ section .wrapper {
     border: 3px solid #3d4968;
     border-radius: 10px;
     margin: auto 10px;
-    width: 480px;
-    height: 404px;
 }
 #text {
     font-size: 16px;
