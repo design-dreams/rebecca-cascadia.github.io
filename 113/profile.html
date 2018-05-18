@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Going Global U</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rebecca Palumbo, Kevin Durgan">
+    <meta name="description" content="Connecting university teachers for classroom COIL projects around the world"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Quicksand:300" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        input[type=text], input[type=password] {
+            width: 200px;
+            padding: 10px 20px;
+            margin: 5px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            background-color: #3d5968;
+            color: white;
+            padding: 10px 7px;
+            margin: 6px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #73a7a4;
+        }
+
+        section {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 500px;
+            position: relative;
+            margin: 20px;
+        }
+        .close {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 3px 6px;
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: black;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            background-color: darkgray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p, form {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Profile</h1>
+        <a href="index2.html"><div class="close">X</div></a>
+        <p>Please create a member profile so that other members can find you and you can see their contact information. If you don't want to create a profile at this time and want to browse the site more first, just click the X in the upper right corner and visit 'My Account' later to create a profile.</p>
+        <form action="index2.html">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name"><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name"><br>
+            <label for="lname">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            
+            <input type="submit" value="Submit">
+        </form>  
+    </section>
+
+</body>
+</html>

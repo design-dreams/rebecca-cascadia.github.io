@@ -1,0 +1,37 @@
+footer {
+    background-color: #3d4968;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: #ecdfc6;    
+}
+.flinks {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+footer a {
+    color: #ecdfc6;
+}
+footer a:hover {
+    color: #72a7a3;
+}
+.share {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.share a {
+    text-decoration: none;
+}
+.twitter {
+    fill: #ecdfc6;
+    position: relative;
+    top: 4px;
+}
+.facebook {
+    fill: #ecdfc6;
+    position: relative;
+    top: 2px;
+}
