@@ -6,23 +6,24 @@ footer {
     bottom: 0;
     color: #ecdfc6; 
 }
-footer a {
-    color: #ecdfc6;
-}
-.nl {
-    text-decoration: none;
-}
-footer a:hover {
-    color: #72a7a3;
-}
 footer .wrapper {
     text-align: center;
     display: relative;
     top: 10px;
 }
 footer p {
-    font-family: 'Lora', serif;
+    font-family: 'Quicksand', serif;
     font-size: 16px;
+}
+footer a {
+    color: #ecdfc6;
+}
+footer a:hover {
+    color: #72a7a3;
+}
+/* a little line was showing up between social icons */
+.nl {
+    text-decoration: none;
 }
 .twitter {
     fill: #ecdfc6;

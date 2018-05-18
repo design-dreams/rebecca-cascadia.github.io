@@ -5,45 +5,46 @@
 body {
     background-color: #ecdfc6;
 }
-
+/* keeps content within 960 px */
 .wrapper {
     width: 960px;
     margin: 0 auto;
     position: relative;
 }
-/* content */
 section {
     position: relative;
     padding: 10px;
     background-color: #ecdfc6;
     margin-bottom: 80px;
 }
-#picture {
-    border: 3px solid #3d4968;
-    border-radius: 10px;
-    margin: 0 20px 20px 0;
-    float: left;
-}
-p {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-}
-section a {
+section a, section a:visited {
     color: #3d5968;
 }
 section a:hover {
     color: #72a7a3;
 }
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
 h3 {
     font-family: 'Lora', serif;
     font-size: 18px;
     margin: 10px 0 3px 0;
+    color: #3d5968;
 }
 h4 {
     font-size: 16px;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     margin: 10px 0 3px 0;
+}
+/* picture of students on home page */
+#picture {
+    border: 3px solid #3d4968;
+    border-radius: 10px;
+    margin: 0 20px 20px 0;
+    float: left;
 }
 .indent {
     padding-left: 20px;
@@ -61,6 +62,7 @@ p {
     background-color: #f2f2f2;
     border-radius: 10px;
     padding: 10px;
+    font-family: 'Arial', sans-serif;
 }
 td {
     height: 30px;

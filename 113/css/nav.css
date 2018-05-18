@@ -8,7 +8,7 @@ nav ul {
     color: #ecdfc6;
     width: 100%;
     align-items: center;
-    font-family: 'Lora', serif;
+    font-family: 'Quicksand', serif;
 }
 nav li {
     padding: 0 12px;
@@ -21,7 +21,7 @@ nav li:hover {
     background-color: #73a7a4;
     padding: 7px 12px;
 }
-nav a {
+nav a, nav a:visited, nav a:hover {
     text-decoration: none;
     color: #ecdfc6;
 }
