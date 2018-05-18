@@ -22,6 +22,7 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
+            font-size: 14px;
         }
 
         input[type=submit] {
@@ -33,6 +34,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 14px;
         }
 
         input[type=submit]:hover {
@@ -55,6 +57,7 @@
             position: absolute;
             top: 30px;
             right: 30px;
+            color: black;
         }
         h1 {
             font-size: 24px;
@@ -71,6 +74,16 @@
         form {
             text-align: center;
         }
+        aside {
+            font-size: 10px;
+            text-align: center;
+        }
+        #forgot {
+            font-size: 14px;
+        }
+        a:hover {
+            color: #73a7a4;
+        }
 </style>
 </head>
 
@@ -79,14 +92,16 @@
         <h1>Sign Up</h1>
         <a href="index.html"><div class="close">X</div></a>
         <h2>Sign up with <a href="profile.html">Google</a> or <a href="profile.html">Facebook</a></h2>
-        <p> or </p>
+        <p> or enter information below and submit </p>
         <form action="profile.html">
             <input type="text" id="fname" name="firstname" placeholder="First Name">
             <input type="text" id="lname" name="lastname" placeholder="Last Name">
             <input type="text" id="email" name="email" placeholder="Email">
             <input type="password" id="password" name="password" placeholder="Password">
             <input type="submit" value="Submit">
-        </form>  
+        </form> 
+        <p id="forgot"><a href="#">Forgot password?</a></p>
+        <aside>In signing up, you agree to Going Global U's Terms of Use and Privacy Policy.</aside>
     </section>
 
 </body>
