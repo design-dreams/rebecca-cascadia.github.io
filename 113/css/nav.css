@@ -8,11 +8,12 @@ nav ul {
     color: #ecdfc6;
     width: 100%;
     align-items: center;
+    font-family: 'Lora', serif;
 }
 nav li {
     padding: 0 12px;
 }
-nav li:first-child {
+nav li.highlighted {
     background-color: #73a7a4;
     padding: 7px 12px;
 }

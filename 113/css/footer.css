@@ -4,26 +4,25 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    color: #ecdfc6;    
-}
-.flinks {
-    position: absolute;
-    left: 40px;
-    top: 20px;
+    color: #ecdfc6; 
 }
 footer a {
     color: #ecdfc6;
 }
+.nl {
+    text-decoration: none;
+}
 footer a:hover {
     color: #72a7a3;
 }
-.share {
-    position: absolute;
-    right: 20px;
+footer .wrapper {
+    text-align: center;
+    display: relative;
     top: 10px;
 }
-.share a {
-    text-decoration: none;
+footer p {
+    font-family: 'Lora', serif;
+    font-size: 16px;
 }
 .twitter {
     fill: #ecdfc6;
@@ -34,4 +33,7 @@ footer a:hover {
     fill: #ecdfc6;
     position: relative;
     top: 2px;
+}
+.twitter:hover, .facebook:hover {
+    fill: #fff;
 }
