@@ -26,6 +26,7 @@ section a:hover {
 p {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 h3 {
     font-family: 'Lora', serif;
@@ -46,23 +47,22 @@ h4 {
     margin: 0 20px 20px 0;
     float: left;
 }
-.indent {
-    padding-left: 20px;
-}
+/* picture of Greg */
 #greg {
     border: 3px solid #3d4968;
     border-radius: 10px;
     float: right;
     margin: 15px 0 0 20px;
 }
-p {
-    margin-bottom: 5px;
-}
-.table {
+
+/* Forum table in account page */
+table {
     background-color: #f2f2f2;
     border-radius: 10px;
     padding: 10px;
     font-family: 'Arial', sans-serif;
+    width: 100%;
+    font-size: 14px;
 }
 td {
     height: 30px;
@@ -75,4 +75,86 @@ tr td:nth-child(2) {
 }
 tr td:nth-child(3) {
     width: 100px;
+}
+/* used in help page */
+.indent {
+    padding-left: 20px; 
+}
+/* **************************Search box*********************************************** */
+/* searchbox (added 5/18/18 by Kevin) */
+.searchbox {
+    
+}
+.searchbox input[type=text]{
+    margin-left: 350px;
+    margin-top: 10px; 
+    width: 200px;
+    height: 20px;
+}
+.searchbox input[type=submit] {
+    width: 80px;   
+    height: 20px;
+}
+
+/* **************************Projects page******************************************** */
+/* flex container for projects page (added 5/16/18 @ 1300 by Kevin) */
+.flex-container {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* for each TThankbox in flex-container */
+.flex-container .box {   /* class tag box for the find members page */
+    border: 3px solid #4a7d7a;
+    background-color: white;
+    width: 285px;
+    margin: 10px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.flex-container .projectbox {  /* different class tag so project box looks different than member box */
+    border: 3px solid #4a7d7a;
+    background-color: #ecdfc6;
+    width: 285px;
+    margin: 10px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.flex-container img {
+    float: right;
+}
+.flex-container ul {
+    list-style-type: none;
+}
+.flex-container ul li {
+    padding: 0;
+    margin: 10px;
+    display: block;
+    line-height: 1.4;
+}
+.descrip {
+    padding: 5px; 
+    display: block;
+    line-height: 1.5;   
+    font-size: 16px;
+}
+.flex-container h3 {
+    text-align: center;
+    font-size: 20px;
+    background-color: #3d4968;
+    color: white;
+    
+}
+.flex-container li {
+    padding-top: 0px;
+    margin-top: 0px; 
+    display: inline;
+    line-height: 100%;
 }
