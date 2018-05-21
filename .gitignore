@@ -1,6 +1,7 @@
 # GitHub Desktop on my Mac
 .DS_Store
 */.DS_Store
+*/*/.DS_Store
 
 # Logs
 logs
