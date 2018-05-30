@@ -2,28 +2,31 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Light &amp; Dark</title>
     <meta charset="utf-8">
     <meta name="author" content="Rebecca Palumbo">
-    <meta name="description" content=""> <!-- description of site -->
+    <meta name="description" content="an experimental website to find hidden meaning">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/jquery-ui.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="//use.edgefonts.net/aclonica;rosario.js"></script> <!-- Adobe Edge Fonts -->
+    <!-- Adobe Edge Fonts -->
+    <script src="//use.edgefonts.net/aclonica;rosario.js"></script> 
 </head>
 
 <body>
     
     <header>
-        <h1>Hidden Path</h1>
+        <h1><span style="color:#8896cb">Light</span> <span style="color:#4e5292">&amp;</span> <span style="color:#2a4891">Dark</span></h1>
+        <p>an experimental website to find hidden meaning</p>
     </header>
     <nav>
-        <p><a href="../portfolio.html">FIND ME</a></p>
+        <p id="me"><a href="../portfolio.html">FIND ME</a></p>
+        <p id="side">Click on a circle</p>
     </nav>
     <section>
         <div id="light"></div>
         <div class="textbox c1"></div>
-        <div class="textbox2 c1"><p>the universe is constantly changing and evolving and all of that created you</p></div>
+        <div class="textbox2 c1"><p>"know what sparks the light in you, then use that light to illuminate the world"</p></div>
         <div class="textbox c2"></div>
         <div class="textbox2 c2"><p>a label is just a dot on the surface of who we are</p></div>
         <div class="textbox c3"></div>
@@ -33,13 +36,13 @@
         <div class="textbox c5"></div>
         <div class="textbox2 c5"><p>the dark is fear<br>the light is awareness<br>shine a light in the dark and the fear goes away</p></div>
         <div class="textbox c6"></div>
-        <div class="textbox2 c6"><p>love has many definitions, but it can't exist without compassion and acceptance</p></div>
+        <div class="textbox2 c6"><p>"darkness cannot drive out darkness:<br>only light can do that<br>hate cannot drive out hate:<br>only love can do that"<br>MLK Jr</p></div>
         <div class="textbox c7"></div>
         <div class="textbox2 c7"><p>accept everything as it is and watch everything change</p></div>
         <div class="textbox c8"></div>
-        <div class="textbox2 c8"><p>"I have loved the stars too fondly to be fearful of the night"</p></div>
+        <div class="textbox2 c8"><p>"we are all made of stardust"</p></div>
         <div class="textbox c9"></div>
-        <div class="textbox2 c9"><p>"Take away the present moment, and time is nothing but an illusion."</p></div>
+        <div class="textbox2 c9"><p>"take away the present moment and time is nothing but an illusion"</p></div>
     </section>
 <!--jQuery CDN -->
 <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
@@ -61,7 +64,6 @@
         /* hides and shows circle on click on touch devices */
         $(textbox).click(function() {
             $(this).hide("pulsate",500);
-            $(this).show();
             $(this).delay(3000)
                    .show("fade",4000);
         });

@@ -5,6 +5,7 @@
 body {
     background-color: #000;
     font-family: 'rosario', sans-serif;
+    position: relative;
 }
 header {
     width: 100%;
@@ -13,29 +14,50 @@ header {
 }
 h1 {
     text-align: center;
-    color: #4e5292;
     font-family: 'aclonica', sans-serif;
     font-size: 40px;
     margin: 20px;  
 }
+header p {
+    font-size: 14px;
+    font-family: 'rosario', sans-serif;
+    text-align: center;
+    color: #4e5292;
+}
 nav {
     position: relative;
 }
-nav p {
+#me {
+    display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #000;
+    top: 350px;
+    right: -10px;
     font-family: 'rosario', sans-serif;
     z-index: 30;
+    color: #4e5292;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
 }
-nav p a {
-    color: #000;
+nav a, a:link, a:visited {
+    color: #4e5292;
+}
+nav a:hover {
+    color: #8896cb;
+}
+#side {
+    display: block;
+    position: absolute;
+    -ms-transform: rotate(60deg); /* IE 9 */
+    -webkit-transform: rotate(60deg); /* Safari */
+    transform: rotate(60deg);
+    color: #4e5292;
+    font-size: 14px;
+    top: 250px;
+    right: 0px;
 }
 section {
     height: 1800px;
-    overflow-x: hidden;
-    overflow-y: hidden;
     position: relative;   
 }
 .textbox {
@@ -101,11 +123,11 @@ section {
 
 @media screen and (min-width: 500px) {
     .c1 {
-        top: 70px;
+        top: 80px;
         left: 50px;
     }
     .c2 {
-        top: 100px;
+        top: 110px;
         left: 300px;
     }
     .c3 {
@@ -136,6 +158,17 @@ section {
         top: 800px;
         left: 700px;
     }
+    section {
+        height: 1000px;
+    }
+    #me {
+    top: 20px;
+    right: 20px;
+    color: #4e5292;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+    }
 }
 /* light effect only works with devices that can hover */
 @media (hover: hover) {
@@ -156,5 +189,24 @@ section {
     .textbox2 p {
         color: #000;
         font-size: 16px;
+    }
+    #side {
+        display: none;
+    }
+    section {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 1000px;
+    }
+    #me {
+    top: 20px;
+    right: 20px;
+    color: #000;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+    }
+    nav a, a:link, a:visited {
+    color: #000;
     }
 }
