@@ -147,7 +147,7 @@ nav a:hover {
 .about p {
     padding: 10px;
 }
-.about a, a:active, a:visited {
+.about a, .about a:active, .about a:visited {
     color: #6a7e9e;
 }
 .about a:hover {
