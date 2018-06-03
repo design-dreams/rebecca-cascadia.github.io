@@ -2,39 +2,47 @@
 <html lang="en">
 
 <head>
-    <title>Rebecca Miller-Web Designer</title>
+    <title>Rebecca Palumbo's Portfolio</title>
     <meta charset="utf-8">
-    <meta name="author" content="Rebecca Miller">
-    <meta name="description" content="Find Rebecca's resume, work and contact information.">
+    <meta name="author" content="Rebecca Palumbo">
+    <meta name="description" content="Web Designer's Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|EB+Garamond:600" rel="stylesheet">
-    <link href="css/intro.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="//use.edgefonts.net/montez;overlock-sc.js"></script>
 </head>
 
 <body>
+    <div id="page">
     <header>
         <h1>Rebecca Palumbo</h1>
-        <h2>Web Designer</h2>
+        <h2>web designer</h2>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
     <section class="intro">
-        <div class="list">
             <ul>
-                <li>Simple</li>
-                <li>Balanced</li>
-                <li>Beautiful</li>
-                <li>Web Design</li>
+                <li id="l1">Simple</li>
+                <li id="l2">Balanced</li>
+                <li id="l3">Beautiful</li>
+                <li id="l4">Web Design</li>
             </ul>
-        </div>
-        <div class="enter"><a href="portfolio.html">See My Portfolio</a><div class="duh"></div></div>
     </section>
+    </div>
     
 <!-- jQuery -->  
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
 <script>
-    (function() {
-       $('li').children(1).show(); 
+    $(function() {
+        $('#l1').hide().show(2000); 
+        $('#l2').hide().delay(2000).show(2000);
+        $('#l3').hide().delay(4000).show(2000);
+        $('#l4').hide().delay(6000).show(2000);
     });
 </script>
     
