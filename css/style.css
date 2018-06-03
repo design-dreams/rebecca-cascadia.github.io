@@ -5,9 +5,10 @@
 body {
     background-color: black;
 }
+/* header */
 header {
     height: 120px;
-    background-color: #f7efe9;
+    background-color: #e6d8cd;
     width: 100%;
 }
 h1 {
@@ -29,32 +30,36 @@ h2 {
     font-weight: 400;
     font-style: normal;
 }
+/* nav bar */
 nav ul {
     display: inline-flex;
     background-color: black;
     list-style: none;
     margin: 0 30px;
     font-family: overlock-sc, sans-serif;
+    font-size: 18px;
 }
 nav li {
     padding: 3px 12px;
 }
 nav a, nav a:link, nav a:visited  {
     text-decoration: none;
-    color: #f7efea;
+    color: #e6d8cd;
 }
 nav a:hover {
     text-decoration: underline;
-    color: #f7efea;
+    color: #e6d8cd;
 }
-section {
+/* home page content */
+.home {
     background-image: url(../images/rockstacksm.jpg);
+    /* modified from: https://pixabay.com/en/rock-balance-nature-zen-stack-2527616/ - CC0 */
     background-repeat: no-repeat;
     height: 514px;
     position: relative;
     width: 100%;
 }
-section ul {
+.home ul {
     display: block;
     width: 200px;
     font-family: montez, cursive;
@@ -64,20 +69,106 @@ section ul {
     top: 130px;
     left: 200px;
 }
+/* portfolio */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.portfolio div {
+    width: 70%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+}
+.portfolio p {
+    position: relative;
+    top: 20px;
+    font-weight: 700;
+}
+.portfolio a {
+    text-decoration: none;
+}
+.nw {
+    font-family: 'Arima Madurai', sans-serif;
+    background-color: #F3F3F7; 
+    font-size: 24px;
+}
+.nw p {
+    top: 30px;
+}
+.nw a {
+    color: #46653C;
+}
+
+.art {
+    font-family: 'Gaegu', cursive;
+    background-color: #98DCE6;
+    font-size: 32px;
+}
+.art a {
+    color: #E86062;
+}
+.ld {
+    font-family: 'aclonica', sans-serif;
+    font-size: 34px;
+    border: 2px solid #4e5292;
+}
+.ld p {
+    top: 29px;
+}
+.ld a {
+    color:#4e5292;
+}
+.hike {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    background-color: #e3c7b1;
+}
+.hike p {
+    top: 27px;
+}
+.hike a {
+    color:#4B4132;
+}
 /* 1st breakpoint for responsive design */
 @media screen and (min-width: 650px) {
-    section {
+    .home {
         background-image: url(../images/rockstack.jpg);
+        /* modified from: https://pixabay.com/en/rock-balance-nature-zen-stack-2527616/ - CC0 */
     }
-    section ul {
+    .home ul {
         left: 500px;
     }
     h1 {
-        font-size: 60px;
+        font-size: 70px;
+        top: 10px;
     }
     h2 {
-        left: 245px;
-        top: 0;
+        font-size: 20px;
+        left: 286px;
+        top: -10px;
+    }
+    nav ul {
+        font-size: 16px;
+    }
+    .nw p {
+        font-size: 40px;
+        top: 20px;
+    }
+    .art p {
+        font-size: 55px;
+        top: 7px;
+    }
+    .ld p {
+        font-size: 50px;
+        top: 20px;
+    }
+    .hike p {
+        font-size: 45px;
+        top: 20px;
     }
 }
 /* 2nd breakpoint for responsive design */
@@ -85,9 +176,19 @@ section ul {
     #page {
         margin: 20px auto;
         width: 1000px;
+        border: 2px solid #e6d8cd;
     }
     header {
         width: 1000px;
+    }
+    @keyframes mymove {
+        0% {left: 30px;}
+        50% {left: 80px;}
+        100% {left: 30px;}
+    }
+    h1 {
+        -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+        animation: mymove 5s ease 2s 1;
     }
 }
     

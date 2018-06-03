@@ -1,0 +1,82 @@
+body {
+  background-image: url("../_images/trees2.jpg"); /* picture I took */
+  color: #4B4132;
+  font-family: 'Open Sans', sans-serif; /* Google font designed by Steve Matteson */
+  font-style: italic;
+  font-size: 16px;
+}
+.page {
+  background-color: rgb(227,199,177);
+  background-color: rgba(227,199,177,0.9);
+}
+
+/* header */
+h1 {
+  font-family: 'Satisfy', cursive;
+  /* Google font designed by Sideshow */
+  text-shadow: 3px 3px 3px #988972;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* navigation */
+a.navlink:link {color: #28A75E}
+a.navlink:visited {color: #28A75E}
+a.navlink:hover {color: #2E78BF}
+a.navlink:active {color: #2E78BF}
+
+nav {
+  font-family: 'Satisfy', cursive;
+  /* Google font designed by Sideshow */
+  font-size: 24px;
+  text-align: center;
+  background-color: rgb(75,65,50);
+  background-color: rgba(75,65,50,0.8);
+}
+
+/* content */
+a:link {color: #4B4132}
+a:visited {color: #4B4132}
+a:hover {color: #296AA9}
+a:focus {color: #296AA9}
+a:active {color: #296AA9}
+
+section p:first-child {
+  text-align: center;
+}
+h2 {
+  font-family: 'Satisfy', cursive; /* Google font */
+  font-size: 24px;
+  text-align: center;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* gallery on home page */
+.gallery figcaption {
+  text-align: center;
+}
+.gallery img {
+  border: 3px solid #228A4F;
+}
+
+/* each hiking page */
+dt {
+  font-size: 18px;
+  font-weight: bold;
+}
+ol {
+  margin-left: 30px;
+}
+
+/* disclaimer on gear and safety tips page */
+aside {
+  font-size: 12px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
