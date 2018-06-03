@@ -15,11 +15,12 @@ h1 {
     top: 20px;
     left: 30px;
     font-family: montez, cursive;
-    font-size: 60px;
+    font-size: 55px;
 }
 h2 {
     position: relative;
-    left: 245px;
+    left: 218px;
+    top: 3px;
     font-family: overlock-sc, sans-serif;
     font-size: 18px;
     text-decoration: overline;
@@ -66,6 +67,13 @@ section ul {
     }
     section ul {
         left: 500px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        left: 245px;
+        top: 0;
     }
 }
 /* 2nd breakpoint for responsive design */
