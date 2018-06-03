@@ -30,6 +30,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
 }
+
 /* nav bar */
 nav ul {
     display: inline-flex;
@@ -69,7 +70,7 @@ nav a:hover {
     top: 130px;
     left: 200px;
 }
-/* portfolio */
+/* portfolio page content */
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +133,25 @@ nav a:hover {
 }
 .hike a {
     color:#4B4132;
+}
+/* about page content */
+.about {
+    width: 70%;
+    background-color: #f6f2ee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 20px auto;
+    height: 400px;
+    line-height: 1.5;
+}
+.about p {
+    padding: 10px;
+}
+.about a, a:active, a:visited {
+    color: #6a7e9e;
+}
+.about a:hover {
+    color: #a1acb5;
 }
 /* 1st breakpoint for responsive design */
 @media screen and (min-width: 650px) {
