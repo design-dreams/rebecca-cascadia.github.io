@@ -1,7 +1,6 @@
 Class work for BIT 175: Front End Development 
 =============================================
-at Cascadia College in Bothell, WA in Spring Quarter of 2018
-============================================================
+Cascadia College in Bothell, WA in Spring Quarter of 2018
 
 First introduction to GitHub in this class.
 
