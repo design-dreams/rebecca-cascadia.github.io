@@ -15,6 +15,7 @@ h1 {
     position: relative;
     top: 20px;
     left: 30px;
+    width: 310px;
     font-family: montez, cursive;
     font-size: 55px;
     font-weight: 400;
@@ -24,6 +25,7 @@ h2 {
     position: relative;
     left: 218px;
     top: 3px;
+    width: 120px;
     font-family: overlock-sc, sans-serif;
     font-size: 18px;
     text-decoration: overline;
@@ -39,6 +41,7 @@ nav ul {
     margin: 0 30px;
     font-family: overlock-sc, sans-serif;
     font-size: 18px;
+    width: 300px;
 }
 nav li {
     padding: 3px 12px;
@@ -48,7 +51,6 @@ nav a, nav a:link, nav a:visited  {
     color: #e6d8cd;
 }
 nav a:hover {
-    text-decoration: underline;
     color: #e6d8cd;
 }
 /* home page content */
@@ -76,7 +78,7 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .portfolio div {
     width: 70%;
@@ -136,12 +138,12 @@ nav a:hover {
 }
 /* about page content */
 .about {
-    width: 70%;
+    width: 100%;
     background-color: #f6f2ee;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    margin: 20px auto;
-    height: 400px;
+    margin: 0 auto;
+    height: 514px;
     line-height: 1.5;
 }
 .about p {
@@ -165,6 +167,7 @@ nav a:hover {
     h1 {
         font-size: 70px;
         top: 10px;
+        width: 390px;
     }
     h2 {
         font-size: 20px;
@@ -211,4 +214,8 @@ nav a:hover {
         animation: mymove 5s ease 2s 1;
     }
 }
-    
+@media (hover:hover) {
+    nav a:hover {
+        text-decoration: underline;
+    }
+}
