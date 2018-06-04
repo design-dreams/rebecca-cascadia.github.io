@@ -1,4 +1,4 @@
-Experimental Website
-====================
+Gallery of Photos I've taken
+============================
 
-Third website to create something a little different.
+First website to create some kind of gallery. I enjoy taking photos of nature.
