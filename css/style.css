@@ -78,12 +78,12 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 15px 0;
+    height: 514px;
 }
 .portfolio div {
     width: 70%;
     height: 100px;
-    margin: 10px 0;
+    margin: 30px 0;
     text-align: center;
 }
 .portfolio p {
